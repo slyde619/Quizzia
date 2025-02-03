@@ -98,6 +98,12 @@ main{
     display: none;
 }
 
+.off{
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1.16rem;
+}
+
 .totalQuestion p span{
     font-size: 1.22rem;
     color: var(--brown-dark);
