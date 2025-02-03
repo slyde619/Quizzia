@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-primary: hsl(32, 67%, 92%);
+  --brown-dark: hsl(20, 34%, 33%);
+  --white: hsl(0, 0%, 98%);
+  --light: hsla(28, 34%, 90%, 0.52);
+  --bx-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --ff-primary: "Public Sans", serif;
+  --text-dark: hsl(225, 3%, 24%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  line-height: -0.305rem;
+  font-family: var(--ff-primary);
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  background-color: var(--light);
+  border: 1px solid var(--brown-dark);
+  cursor: pointer;
+  box-shadow: var(--bx-shadow);
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background-color 0.5s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--brown-dark);
+  border: var(--white);
+  color: var(--white);
+}
+
+ol, li{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    display: inline-block;
+}
+
+.card{
+    max-width: 550px;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: var(--bx-shadow);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: .4rem;
+}
+
+.card-title{
+    width: 100%;
+    display: flex;
+    padding-block-end: .5rem;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.card-divider{
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: var(--text-dark);
+    opacity: .6;
+}
+
+.card-footer{
+    width: 100%;
+    padding-block-start: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
